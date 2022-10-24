@@ -2,10 +2,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
+
         int a = 0;
         int b = 0;
         int c = 0;
+
         do {
             System.out.print("Enter a number: ");
             int temp = sc.nextInt();
@@ -16,18 +19,15 @@ public class Main {
             } else {
                 c++;
             }
+
             System.out.print("Do you want to continue? (y/n): ");
             String temp1 = sc.next();
             if (temp1.equals("n")) {
                 break;
-            } else if (temp1.equals("y")) {
-                continue;
-            } else {
-                System.out.println("Invalid input");
             }
         } while (true);
 
-        System.out.println("Positive numbers: " + a);
+        System.out.println("\nPositive numbers: " + a);
         System.out.println("Negative numbers: " + b);
         System.out.println("Zeroes: " + c);
 
