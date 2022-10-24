@@ -2,12 +2,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         int a = 0;
         int b = 0;
         int c = 0;
         do {
             System.out.print("Enter a number: ");
-            Scanner sc = new Scanner(System.in);
             int temp = sc.nextInt();
             if (temp > 0) {
                 a++;
@@ -17,8 +17,7 @@ public class Main {
                 c++;
             }
             System.out.print("Do you want to continue? (y/n): ");
-            Scanner sc1 = new Scanner(System.in);
-            String temp1 = sc1.next();
+            String temp1 = sc.next();
             if (temp1.equals("n")) {
                 break;
             } else if (temp1.equals("y")) {
